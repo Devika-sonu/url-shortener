@@ -1,4 +1,4 @@
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/00539c9f-610e-489d-9aa1-ccf045e93641" /># URL Shortener Project
+# URL Shortener Project
 
 ## Objective
 Convert long URLs into short URLs and redirect to original link.
@@ -47,3 +47,8 @@ CREATE TABLE urls (
     expiry_date TIMESTAMP NULL
 );
 ```
+
+## Indexing
+
+- The `short_code` field is marked as UNIQUE, which automatically creates an index.
+- This helps in faster lookup when redirecting users using the short URL.
